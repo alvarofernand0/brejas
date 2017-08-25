@@ -1,0 +1,370 @@
+@font-face {
+
+}
+
+
+a {
+
+  text-decoration: none;
+  color: black;
+  font-size: 15pt;
+
+}
+
+body {
+  font-family: arial, sans-serif;
+
+}
+
+
+.menu-principal {
+  color: #38B0DE;
+  position: fixed;
+  list-style: none;
+  margin-top: 0px;
+}
+
+.menu-principal li {
+background-size: auto;
+  padding: 20px;
+  background-color: gold;
+}
+
+
+/*------------- MEDIA QUERIES ---------------*/
+
+
+@media only screen and (max-width: 320px) {
+  .banner {
+    margin: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+body {
+    background-size: cover;
+    font-size: 8pt;
+
+}
+
+.menu-principal {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .menu-principal {
+      margin-top: -280px;
+
+      display: flex;
+
+    }
+
+  .menu-principal li {
+      border: 1px white solid;
+      box-shadow: 3px 3px 8px black;
+      flex-direction: column;
+      flex-grow: 1;
+
+
+  }
+
+  .nav-toggle, .hamburger, .sidebar, #navicon {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+.nav-toggle, .hamburger, .sidebar, #navicon {
+      display: none;
+  }
+
+.menu-principal {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+.menu-principal li{
+    border: 1px white solid;
+
+  }
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+  .nav-toggle, .hamburger, .sidebar, #navicon {
+      display: none;
+
+}
+
+.menu-principal {
+  display: flex;
+  flex-direction: row;
+  margin-top: -250px;
+
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+
+.banner .botao {
+  font-size: 15pt;
+
+}
+  .nav-toggle, .hamburger, .sidebar, #navicon {
+      display: none;
+}
+
+
+/*------------------- MENU ---------------------*/
+
+.menu-principal{
+    display: flex;
+    flex-direction: row;
+    font-size: 15pt;
+    margin-top: -300px
+
+  }
+
+.menu-principal li:hover {
+  padding:45px;
+  transition: 0.8s;
+
+}
+.menu-principal li:after {
+  padding: 45px;
+  transition: 0.7s;
+}
+
+  .menu-principal li {
+font-size: 15pt;
+padding: 35px;
+border: 1px black solid;
+box-shadow: 10px 15px 50px black;
+
+  }
+
+.banner> .botao {
+
+  box-shadow: 20px 15px 40px black;
+
+  }
+
+}
+
+header {
+  background-image: linear-gradient(to bottom, black 0%,white 200%), url(../img/cerveja.jpg);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: -9px;
+}
+header .banner p, header .banner h1 {
+  color: #ecece2;
+}
+
+header .banner h1 {
+  margin: 0px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+header .banner p {
+  font-size: 2em;
+  font-style: italic;
+}
+
+header .banner .botao {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  border-radius: 3px;
+  font-size: 1.5em;
+  padding: 20px 40px;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.botao {
+  display: flex;
+  box-shadow: 3px 3px 10px black;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 620px;
+  margin-top: 30px;
+}
+
+.backgr {
+background-color: rgba(111, 202, 166, 0.4);
+
+}
+
+/*-----------MENU HAMBURGUER---------*/
+
+@media only screen and (max-width: 480px) {
+
+.menu-principal {
+  display: none;
+}
+
+.banner, .botao {
+  font-size: 9pt;
+
+}
+
+.nav-toggle {
+  display: block;
+  padding: 10px 10px 15px 10px;
+  background-color: gold;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+.hamburger {
+  width: 1.08em;
+  position: relative;
+  display: inline-block;
+  height: 0.6em;
+  font-size: 1.2em;
+  background-color: gold;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 100%;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  left: 0px;
+  height: 0.185em;
+  border-radius: 1.2px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 0.36em;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0.73em;
+}
+
+.sidebar {
+  padding-right: 10px;
+  padding-left: 30px;
+  box-shadow: 3px 3px 15px black;
+  display: flex;
+  border: 1px black solid;
+  flex-direction: column;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 23px;
+  text-align: left;
+  width: 80%;
+  height: 40%;
+  position: fixed;
+  background: gold;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+  -ms-transition: 0.7s all;
+  -moz-transition: 0.7s all;
+  -o-transition: 0.7s all;
+}
+
+.sidebar a {
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+}
+
+#menu-nome {
+  color: darkgray;
+  border-radius: 1px darkgray solid;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+#navicon {
+  display: none;
+}
+#navicon:checked ~ .sidebar {
+  visibility: visible;
+  opacity: 1;
+}
+
+#navicon:checked ~ .nav-toggle > .hamburger span {
+  top: 0.36em;
+}
+
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(1) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+    }
+
+}
+
+
+/*------------- HOVER --------------*/
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+transition: 0.7s;
+
+}
