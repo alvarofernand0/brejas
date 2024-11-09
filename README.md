@@ -1,2 +1,2 @@
 # brejas
-Seu site sobre cervejas
+Seu site sobre cervejas 🍺
