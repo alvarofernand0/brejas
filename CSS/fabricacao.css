@@ -180,7 +180,7 @@ body {
 
 
 header {
-  background-image: linear-gradient(to bottom, black 0%,white 200%), url(../img/cerveja-fundo.jpg);
+  background-image: linear-gradient(to bottom, black 0%,white 200%), url(../IMG/cerveja-fundo.jpg);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
