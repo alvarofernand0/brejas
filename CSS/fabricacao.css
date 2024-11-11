@@ -225,7 +225,7 @@ table#tabelaspec td {
 }
 
 table#tabelaspec td.ce {
-  color: #000000;
+  color: #000;
   background-color: rgba(111, 202, 166, 0.2);
   vertical-align: top;
   font-weight: bold;
