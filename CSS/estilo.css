@@ -160,7 +160,7 @@ box-shadow: 10px 15px 50px black;
 }
 
 header {
-  background-image: linear-gradient(to bottom, black 0%,white 200%), url(../img/barril-de-cerveja.jpeg);
+  background-image: linear-gradient(to bottom, black 0%,white 200%), url(../IMG/barril-de-cerveja.jpeg);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
